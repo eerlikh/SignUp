@@ -1,0 +1,11 @@
+<%= form_for @user do |u| %>
+  <div class="row inputField">
+    <%= u.label :name %>
+    <%= u.text_field :name %>
+  </div>
+  <div class="row inputField">
+    <%= u.label :email %>
+    <%= u.text_field :email %>
+  </div>
+  <%= u.submit %>
+<% end %>
